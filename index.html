@@ -1,293 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tarun Dharecha | Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Tarun Dharecha</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+            text-align: center;
+        }
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        .container {
+            margin-top: 100px;
+        }
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+        h1 {
+            font-size: 48px;
+            color: #000;
+        }
 
-    body {
-      background: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
+        h2 {
+            font-size: 32px;
+            color: #1a1a1a;
+            margin-top: 20px;
+            font-weight: 900;
+            text-decoration: red double underline;
+        }
 
-    header {
-      background: linear-gradient(135deg, #2563eb, #1e40af);
-      padding: 60px 20px;
-      text-align: center;
-    }
+        li{
+            font-size: 22px;
+            margin-top: 15px;
+            font-weight: bold;
+            text-align: left;
+        
+        }
 
-    header h1 {
-
-      font-size: 48px;
-      font-weight: 700;
-    }
-
-    header p {
-      font-size: 20px;
-      margin-top: 10px;
-      color: #dbeafe;
-    }
-
-    nav {
-      background: #020617;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      gap: 30px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #e5e7eb;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #60a5fa;
-    }
-
-    section {
-      padding: 80px 10%;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-
-    .section-title h2 {
-      font-size: 36px;
-      color: #60a5fa;
-    }
-
-    .about {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .about img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    }
-
-    .about p {
-      font-size: 18px;
-      color: #cbd5f5;
-    }
-
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-    }
-
-    .skill-card {
-      background: #020617;
-      padding: 30px;
-      border-radius: 15px;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .skill-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.6);
-    }
-
-    .skill-card h3 {
-      margin-bottom: 10px;
-      color: #93c5fd;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .project-card {
-      background: #020617;
-      border-radius: 15px;
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-
-    .project-card:hover {
-      transform: scale(1.05);
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .project-card .content {
-      padding: 20px;
-    }
-
-    .project-card h3 {
-      margin-bottom: 10px;
-      color: #93c5fd;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .contact p {
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-
-    footer {
-      background: #020617;
-      text-align: center;
-      padding: 20px;
-      color: #94a3b8;
-    }
-
-    @media (max-width: 768px) {
-      .about {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-    }
-  </style>
+        footer {
+            margin-top: 80px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1 class="margin">Tarun Dharecha</h1>
-    <p>Computer Engineering Student | Web Developer</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section id="about">
-    <div class="section-title">
-      <h2>About Me</h2>
-    </div>
-    <div class="about">
-      <img src="c:\Users\BAPS\OneDrive\Documents\tarun1.jpeg" alt="Profile Photo">
-      <p>
-        I am a Computer Engineering student with strong interest in Web Development
-        and Programming. I enjoy building clean, responsive and user‑friendly
-        websites using HTML, CSS and Java. My goal is to become a professional
-        full‑stack developer.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="section-title">
-      <h2>Skills</h2>
-    </div>
-    <div class="skills">
-      <div class="skill-card">
-        <h3>HTML</h3>
-        <p>HTML
-• Basic tags & structure
-• Forms & input elements
-• Tables & lists
-• Semantic HTML (header, section, footer)
-</p>
-      </div>
-      <div class="skill-card">
-        <h3>CSS</h3>
-        <p>CSS (Basic)
-• Colors & fonts
-• Box model
-• Flexbox (basic)
-• Responsive layout (basic)
-</p>
-      </div>
-      <div class="skill-card">
-        <h3>Java</h3>
-        <p>Java (Basic)
-OOP concepts & console programs
-</p>
-      </div>
-      <div class="skill-card">
-        <h3>quary</h3>
-        <p>basic database qyary , joins </p>
-      </div>
-      <div class="skill-card">
-        <h3>python</h3>
-        <p>python basic </p>
-      </div>
-     
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="section-title">
-      <h2>Projects</h2>
-    </div>
-    <div class="projects">
-      <div class="project-card">
-
-        <div class="content">
-          <h3>Portfolio Website</h3>
-          <p>Personal responsive portfolio using HTML & CSS.</p>
-        </div>
-      </div>
-      <div class="project-card">
+    <div class="container">
+        <h1 style="color: #138808;">MODI MODI MODI </h1>
         
-        <div class="content">
-          <h3>Student Management</h3>
-          <p>Java based mini project for managing students.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="contact">
-    <div class="section-title">
-      <h2>Contact</h2>
-    </div>
-    <div class="contact">
-      <p>Email: tarundharecha13@gmai.com</p>
-      <p>College: SSASIT, Surat</p>
-      <p>address : to - kaneri , takuka - gir gadhda , dis - gir somnath , 362530</p>
-    </div>
-  </section>
+        <img src="https://i.pinimg.com/originals/7b/c1/3a/7bc13a80127120f632e6f8c195197146.png">
 
-  <footer>
-    <p>tarun dharecha </p>
-  </footer>
+        <h2> ABOUT MODI </h2>
+       <UL>
+        <LI>MODI HE TO MUMKIN HE </LI>
+        <LI> MODI HI SAB KUCH HE </LI>
+        <LI> MODI HI PARM SATY HE </LI>
+       </UL>
+
+       <h2>BEST DIALOGUE </h2>
+   
+        <ul>
+            <li>IS BAR HUM DESH KO HI BECH DENGE </li>
+            <li>LAUDE NA BHOJYAM </li>
+        </ul>
+
+        <br><br><br>
+
+        <h1 style="color: red;"> thank you for waching &hearts;</h1>
+
+
+    </div>
+
+    <footer>
+        © 2026 | Designed by Tarun Dharecha
+    </footer>
 
 </body>
 </html>
- u
